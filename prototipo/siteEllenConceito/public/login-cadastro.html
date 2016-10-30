@@ -5,113 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../resources/lib/bootstrap-4.0.0/css/bootstrap.min.css">
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="../resources/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="../resources/css/style.css">
 
-	<link rel="stylesheet" href="../resources/css/cadastro.css">
-	<title>Home</title>
+	<!-- css de icons-->
+	<link rel="stylesheet" href="../resources/lib/font-awesome/css/font-awesome.min.css">
+
+	<title>Login / Cadastro</title>
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-static-top">
-		<div class="container">
-			<div class="navbar-brand">
-				<a href="../home.html">
-					LOGO
-				</a>				
-			</div>		
-		</div>
+	<nav class="navbar navbar-light navbar-static-top bg-faded">
+		<a class="navbar-brand" href="#">
+			@EllenConceito_
+		</a>
+		<ul class="nav navbar-nav">
+			<li class="nav-item active">
+				<a class="nav-link" href="../home.html">					
+					Home <span class="sr-only">(current)</span>	
+				</a>
+			</li>			
+		</ul>		
 	</nav>
 
-	<div class="top-content">
-        	
-		<div class="inner-bg">
-			<div class="container">		
-				<div class="row">
-					<div class="col-md-5">				
-						<div class="form-box">
-			            	<div class="form-top">
-			            		<div class="form-top-left">
-			            			<h3>Login para o site</h3>
-			                		<p>Digite nome de usuário e senha para fazer logon:</p>
-			            		</div>
-			            		<div class="form-top-right">
-			            			<i class="fa fa-key"></i>
-			            		</div>
-			                </div>
-
-			                <div class="form-bottom">
-			                    <form role="form" action="" method="post" class="login-form">
-			                    	<div class="form-group">
-			                    		<label class="sr-only">Usuário</label>
-			                        	<input type="text" name="form-username" placeholder="Usuário" class="form-control" id="form-username">
-			                        </div>
-			                        <div class="form-group">
-			                        	<label class="sr-only" for="form-password">Senha</label>
-			                        	<input type="password" name="form-password" placeholder="Senha" class="form-password form-control" id="form-password">
-			                        </div>
-			                        <button type="submit" class="btn login">Entrar</button>
-			                    </form>
-			                </div>
-			            </div>
-					</div>
-
-					<div class="col-sm-1 middle-border"></div>
-			        <div class="col-sm-1"></div>
-
-					<div class="col-md-5">						
-						<div class="form-box">			        		
-			        		<div class="form-top">
-			            		<div class="form-top-left">
-			            			<h3>Inscreva-se agora</h3>
-			                		<p>Preencha o formulário abaixo para ter acesso instantâneo:</p>
-			            		</div>
-			            		<div class="form-top-right">
-			            			<i class="fa fa-pencil"></i>
-			            		</div>
-			                </div>
-			                
-			                <div class="form-bottom">
-			                    <form role="form" action="" method="post" class="registration-form">
-			                    	<div class="form-group">
-			                    		<label class="sr-only" for="form-first-name">Primeiro nome</label>
-			                        	<input type="text" name="form-first-name" placeholder="Primeiro nome" class="form-control" id="form-first-name">
-			                        </div>
-			                        <div class="form-group">
-			                        	<label class="sr-only" for="form-last-name">Sobrenome</label>
-			                        	<input type="text" name="form-last-name" placeholder="Sobrenome" class="form-control" id="form-last-name">
-			                        </div>
-			                        <div class="form-group">
-			                        	<label class="sr-only" for="form-email">Email</label>
-			                        	<input type="text" name="form-email" placeholder="Email" class="form-control" id="form-email">
-			                        </div>
-			                        <div class="row">
-			                        	<div class="col-md-6">
-					                        <div class="form-group">
-					                        	<label class="sr-only">Senha</label>
-					                        	<input type="password" placeholder="Senha" class="form-control" id="form-senha">
-					                        </div>
-				                        </div>
-				                        <div class="col-md-6">
-					                        <div class="form-group">
-					                        	<label class="sr-only">Confirmar Senha</label>
-					                        	<input type="password" placeholder="Confirmar Senha" class="form-control" id="form-senha">
-					                        </div>
-				                        </div>
-			                        </div>
-			                        <button type="submit" class="btn">Quero me inscrever</button>
-			                    </form>
-			                </div>
-			        	</div>			        	
-					</div>
-
+	<div class="container-fluid">
+      	<div class="row">
+      		<div class="col-md-6">
+      			<div class="container">
+					<form class="form">						
+						<legend>JÁ SOU CADASTRADO</legend>
+				    	<div class="form-group row">
+				      		<label for="email" class="col-sm-2 col-form-label">Email</label>
+				      		<div class="col-sm-10">
+				        		<input type="email" class="form-control" id="email" placeholder="Email">
+				      		</div>
+						</div>
+						<div class="form-group row">				      		
+						 	<label for="senha" class="col-sm-2 col-form-label">Senha</label>
+						    <div class="col-sm-10">
+						    	<input type="password" maxlength="8" class="form-control" id="senha" placeholder="Senha">
+						    </div>					    	
+						</div>
+						<div class="form-group row">
+      						<div class="offset-sm-2 col-sm-10">
+        						<button type="submit" class="btn btn-primary" style="float: right;">ENTRAR</button>
+      						</div>
+    					</div>
+					</form>
 				</div>
-			</div>
-		</div>
-	</div>	
+      		</div>
+  			
+  			<div class="col-md-6">
+  				<div class="container">
+					<form class="form">
+						<legend>SOU UM NOVO CLIENTE</legend>
+				    	<div class="form-group row">
+				      		<label for="nome" class="col-sm-2 col-form-label">*Nome</label>
+				      		<div class="col-sm-10">
+				        		<input type="text" maxlength="255" class="form-control" id="nome" placeholder="Nome">
+				      		</div>
+						</div>
+						<div class="form-group row">
+				      		<label for="email" class="col-sm-2 col-form-label">*Email</label>
+				      		<div class="col-sm-10">
+				        		<input type="email" class="form-control" id="email" placeholder="Email">
+				      		</div>
+						</div>
+						<div class="form-group row">				      		
+						 	<label for="senha" class="col-sm-2 col-form-label">*Senha</label>
+						    <div class="col-sm-10">
+						    	<input type="password" maxlength="8" class="form-control" id="senha" placeholder="Senha">
+						    </div>					    	
+						</div>
+						<div class="form-group row">
+							<label class="col-sm-2">*Genero</label>
+							<div class="col-sm-10">
+								<div class="form-check">
+									<label class="custom-control custom-radio">
+		  								<input id="radio1" name="radio" type="radio" class="custom-control-input">
+		  								<span class="custom-control-indicator"></span>
+		  								<span class="custom-control-description">Masculino</span>
+									</label>
+									<label class="custom-control custom-radio">
+		  								<input id="radio2" name="radio" type="radio" class="custom-control-input">
+		  								<span class="custom-control-indicator"></span>
+		  								<span class="custom-control-description">Feminino</span>
+									</label>
+								</div>	
+							</div>
+						</div>
+						<div class="form-group row">
+      						<div class="offset-sm-2 col-sm-10">
+      							<a href="cadastro.html" class="btn btn-success" role="button" style="float: right;">QUERO ME CADASTRAR</a>	
+      						</div>
+    					</div>	
+					</form>
+				</div>
+  			</div>
+      	</div>
+    </div>
+
+	<footer class="footer">
+		<div class="container">
+      		<i class="fa fa-facebook-official"></i>
+        	<span class="text-muted">@ellenconceito_</span>
+
+        	<i class="fa fa-whatsapp" aria-hidden="true">(85)99691081</i>
+      	</div>
+    </footer>
+
 	<script src="../resources/js/jquery.min.js"></script>
+	<script src="../resources/js/tether.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="../resources/js/bootstrap.min.js"></script>
+	<script src="../resources/lib/bootstrap-4.0.0/js/bootstrap.min.js"></script>
+
+	<script src="../resources/js/javascript.js"></script>
 </body>
 </html>

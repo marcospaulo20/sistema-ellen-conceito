@@ -6,10 +6,5 @@ jQuery(document).ready(function(){
         },
         function() {
         	$('.dropdown-menu', this).stop().fadeOut("fast");
-    });
-
-      $("img.lazy").lazyload({
-      		threshold : 300,
-      		effect : "fadeIn"
-      });
+    });      
 });

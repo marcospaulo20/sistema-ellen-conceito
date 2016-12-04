@@ -38,14 +38,14 @@
 						<p style="color: red;"><small>* Preenchimento obrigatório</small></p>
 				    	
 				    	<div class="form-group row">
-				      		<label for="nome" class="col-sm-2 col-form-label">*Nome</label>
+				      		<label for="usuario" class="col-sm-2 col-form-label">*Usuário</label>
 				      		<div class="col-sm-4">
-				        		<input type="text" maxlength="100" class="form-control" id="nome" disabled="true" name="nome" placeholder="Nome">
+				        		<input type="text" maxlength="50" class="form-control" id="usuario" disabled="true" name="usuario" placeholder="Usuário">
 				      		</div>
 
-				      		<label for="sobrenome" class="col-sm-2 col-form-label">Sobrenome</label>
+				      		<label for="nome" class="col-sm-2 col-form-label">Nome</label>
 				      		<div class="col-sm-4">
-				        		<input type="text" maxlength="50" class="form-control" id="sobrenome" placeholder="Sobrenome">
+				        		<input type="text" maxlength="255" class="form-control" id="nome" placeholder="Nome">
 				      		</div>
 						</div>
 
@@ -193,8 +193,8 @@
 			var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
 			return results[1] || 0;
 		}
-		var nome = $.urlParam('nome').replace('+', ' ');
-		$('#nome').val(nome);
+		var usuario = $.urlParam('usuario').replace('+', ' ');
+		$('#usuario').val(usuario);
 
 		var email = $.urlParam('email').replace('+', ' ').replace('%40', '@');
 		$('#email').val(email);
